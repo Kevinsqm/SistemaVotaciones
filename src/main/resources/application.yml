@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: sistemaVotaciones
+  datasource:
+    url: jdbc:mysql://localhost:3307/sistema_votaciones
+    username: root
+    password: 1234567
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  security:
+    jwt:
+      secret-key: 8c1da5104e27ae7a2b15ac895a040ba18677e52136a8d63cc978cf6ff1f8d632
+      expiration-time: 86400000 # 1 day in milliseconds
